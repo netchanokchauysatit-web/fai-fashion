@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ร้านผ้าฝ้ายแฟชั่น</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, "Tahoma", sans-serif;
+    }
+
+    body {
+      background: #fff8f5;
+      color: #4a3b35;
+    }
+
+    header {
+      background: linear-gradient(135deg, #f8c8d8, #f9dfc7);
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #8b4f68;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5c4149;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d46a91;
+    }
+
+    .hero {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(
+        rgba(255, 235, 240, 0.85),
+        rgba(255, 248, 240, 0.9)
+      );
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #8b4f68;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d87599;
+      color: white;
+      padding: 13px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #b9577c;
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .title h2 {
+      font-size: 32px;
+      color: #8b4f68;
+      margin-bottom: 10px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(100, 60, 60, 0.12);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+    }
+
+    .product-image {
+      height: 240px;
+      background: linear-gradient(135deg, #f7d7df, #f5e1cf);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 65px;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #6f4a58;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #d15f87;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .about {
+      background: #fcecef;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .promotion {
+      background: linear-gradient(135deg, #f8c4d5, #ffe2c8);
+      text-align: center;
+      border-radius: 25px;
+      margin: 20px 8%;
+      padding: 45px 20px;
+    }
+
+    .promotion h2 {
+      color: #8b405e;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      text-align: center;
+      line-height: 2;
+    }
+
+    footer {
+      background: #6f4a58;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🌸 ผ้าฝ้ายแฟชั่น</div>
+
+    <nav>
+      <a href="#home">หน้าหลัก</a>
+      <a href="#products">สินค้า</a>
+      <a href="#about">เกี่ยวกับร้าน</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>ร้านผ้าฝ้ายแฟชั่น</h1>
+      <p>เสื้อผ้าแฟชั่นน่ารัก ราคาสบายกระเป๋า 💕</p>
+      <p>เลือกสไตล์ที่ใช่ แล้วสนุกกับการแต่งตัวในแบบของคุณ</p>
+      <br>
+      <a href="#products" class="button">🛍️ ดูสินค้า</a>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="title">
+      <h2>✨ สินค้าแนะนำ ✨</h2>
+      <p>แฟชั่นน่ารัก ใส่ได้ทุกวัน</p>
+    </div>
+
+    <div class="products">
+
+      <div class="card">
+        <div class="product-image">👕</div>
+        <div class="card-content">
+          <h3>เสื้อยืดแฟชั่น</h3>
+          <p>เนื้อผ้านุ่ม ใส่สบาย</p>
+          <div class="price">เริ่มต้น 59 บาท</div>
+          <a href="#contact" class="button">สั่งซื้อ</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="product-image">👗</div>
+        <div class="card-content">
+          <h3>เดรสแฟชั่น</h3>
+          <p>น่ารัก เหมาะกับทุกโอกาส</p>
+          <div class="price">เริ่มต้น 129 บาท</div>
+          <a href="#contact" class="button">สั่งซื้อ</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="product-image">👖</div>
+        <div class="card-content">
+          <h3>กางเกงยีนส์</h3>
+          <p>แมตช์ง่าย ใส่ได้หลายสไตล์</p>
+          <div class="price">เริ่มต้น 199 บาท</div>
+          <a href="#contact" class="button">สั่งซื้อ</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="product-image">🌸</div>
+        <div class="card-content">
+          <h3>แฟชั่นผ้าฝ้าย</h3>
+          <p>สวย นุ่ม ใส่สบาย</p>
+          <div class="price">เริ่มต้น 89 บาท</div>
+          <a href="#contact" class="button">สั่งซื้อ</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="promotion">
+    <h2>🎉 โปรโมชั่นพิเศษ 🎉</h2>
+    <p>ซื้อครบ 300 บาท ลดทันที 20%</p>
+    <p>เริ่มต้นเพียง 59 บาท 💕</p>
+  </div>
+
+  <section class="about" id="about">
+    <div class="title">
+      <h2>🌷 เกี่ยวกับร้าน</h2>
+    </div>
+
+    <p>
+      ร้านผ้าฝ้ายแฟชั่น จำหน่ายเสื้อผ้าแฟชั่นและผ้าฝ้าย
+      <br>
+      เน้นสินค้าสวย น่ารัก ราคาจับต้องได้
+      <br>
+      เพื่อให้ทุกคนสามารถสนุกกับการแต่งตัวในสไตล์ของตัวเอง
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="title">
+      <h2>📱 ติดต่อร้าน</h2>
+    </div>
+
+    <p>📘 Facebook: ร้านผ้าฝ้ายแฟชั่น</p>
+    <p>📞 โทร: 08X-XXX-XXXX</p>
+    <p>💬 Line: @faifashion</p>
+    <p>📍 ยินดีต้อนรับลูกค้าทุกคนค่ะ 💕</p>
+  </section>
+
+  <footer>
+    <p>© 2026 ร้านผ้าฝ้ายแฟชั่น | Fashion Cotton Shop</p>
+  </footer>
+
+</body>
+</html>
