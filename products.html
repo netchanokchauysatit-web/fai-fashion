@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้า | ร้านผ้าฝ้ายแฟชั่น</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8f6;
+            color: #633c42;
+        }
+
+        header {
+            background: linear-gradient(90deg, #f7c5d1, #f9dfc5);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #633c42;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d85d87;
+        }
+
+        .content {
+            text-align: center;
+            padding: 70px 5%;
+        }
+
+        .content h1 {
+            font-size: 36px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .product {
+            background: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .product h3 {
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: #d85d87;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🌸 ผ้าฝ้ายแฟชั่น</h2>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="about.html">เกี่ยวกับร้าน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+</header>
+
+<section class="content">
+
+    <h1>✨ สินค้าแนะนำ ✨</h1>
+    <p>แฟชั่นน่ารัก ใส่ได้ทุกวัน</p>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="shirt.jpg.png" alt="เสื้อแฟชั่น">
+            <h3>เสื้อแฟชั่นน่ารัก</h3>
+            <p class="price">฿59</p>
+        </div>
+
+        <div class="product">
+            <img src="shirt.jpg (2).png" alt="เดรสแฟชั่น">
+            <h3>เดรสแฟชั่น</h3>
+            <p class="price">฿159</p>
+        </div>
+
+        <div class="product">
+            <img src="shirt.jpg (3).png" alt="กางเกงยีนส์">
+            <h3>กางเกงยีนส์</h3>
+            <p class="price">฿199</p>
+        </div>
+
+        <div class="product">
+            <img src="shirt.jpg (5).png" alt="เสื้อคาร์ดิแกน">
+            <h3>เสื้อคาร์ดิแกน</h3>
+            <p class="price">฿129</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
